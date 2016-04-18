@@ -1,0 +1,83 @@
+
+.softarea {
+  background: url('images/Hackathon-028.jpg') no-repeat fixed;
+  background-repeat:no-repeat;
+  background-position:center;
+ 
+  position: absolute;
+ left:0;top:0;right:0;bottom:0;
+  z-index:-5;
+ /*firefox only*/
+  filter:url(#example);
+}
+
+.blurarea {
+  width: 300px;
+  height: 300px;
+ border-radius:50%;
+  background: url('images/Hackathon-028.jpg') no-repeat fixed;
+  background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+  position: absolute;
+   left:0;top:0;right:0;bottom:0;
+  z-index:-5;
+}
+/*.terminal {
+   padding-top: 0;
+      width: 100%;
+      font-size: 26px;
+      color: #ffffff;
+      letter-spacing: 2px;
+     text-align: center;
+
+    }
+
+    .terminal::before {
+      content: ">";
+      margin-right: auto;
+    }*/
+
+
+
+.header{
+   top: 10%;
+   right: 10%;
+   left: 10%;
+   width: 80%;
+    position:fixed;
+  z-index: 1;
+}
+.header img{
+  
+  opacity:0;
+-moz-transition: opacity 4s; /* Firefox 4 */
+-webkit-transition: opacity 4s; /* Safari and Chrome */
+-o-transition: opacity 4s;
+transition: opacity 4s;
+}
+
+#scroll img{
+  opacity:0;
+-moz-transition: opacity 4s; /* Firefox 4 */
+-webkit-transition: opacity 4s; /* Safari and Chrome */
+-o-transition: opacity 4s;
+transition: opacity 4s;
+}
+
+h1{
+  font-family: roboto;
+   text-align: center; 
+   position:absolute;
+   bottom:-4;
+   width:100%;
+   height:60px;  
+}
+h1 a{
+  color:#fff;
+  text-shadow:1px #fff;
+}
+h1 a:hover{
+  background-color:#000;
+  opacity: 0.5;
+}
