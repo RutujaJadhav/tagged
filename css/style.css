@@ -1,4 +1,7 @@
 
+#home{
+height: 800px;
+}
 .softarea {
   background: url('images/Hackathon-028.jpg') no-repeat fixed;
   background-repeat:no-repeat;
@@ -49,7 +52,7 @@
   z-index: 1;
 }
 .header img{
-  
+
   opacity:0;
 -moz-transition: opacity 4s; /* Firefox 4 */
 -webkit-transition: opacity 4s; /* Safari and Chrome */
@@ -80,4 +83,10 @@ h1 a{
 h1 a:hover{
   background-color:#000;
   opacity: 0.5;
+}
+
+ h2{
+  text-align: center;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top:6%;
 }

@@ -10,29 +10,32 @@
  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="css/typewriting.min.js"></script>
+	
  </head>
 
   <body>
  
  
-<div id="softarea" class="softarea"></div>
-<div id="blurarea" class="blurarea"></div>
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#"><img src="images/PictureLogo.png" style="margin-top:-13;"></a>
       <a class="navbar-brand pull-right"  href="#"><img src="images/header-menu.png" style="margin-top:-13;" id="menuicon"></a>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">SCHEDULE</a></li>
-      <li><a href="#">MATERIAL</a></li> 
-      <li><a href="#">REGISTER</a></li>
-      <li><a href="#">SPONSORS</a></li>  
+    <ul class="nav navbar-nav" style="font-family:venus rising">
+      <li class="active"><a href="#">HOME</a></li>
+      <li><a href="#schedule">SCHEDULE</a></li>
+      <li><a href="#material">MATERIAL</a></li> 
+      <li><a href="#register">REGISTER</a></li>
+      <li><a href="#sponsors">SPONSORS</a></li>  
       
     </ul>
   </div>
 </nav>
+
+
+
 <!-- <div class="terminal" style="margin-top: 5%;"></div> -->
     <script>
 $(document).ready( function(){
@@ -68,8 +71,11 @@ $(document).ready( function(){
   })();
 
 </script>
-
+<div id="home">
+<div id="softarea" class="softarea"></div>
+<div id="blurarea" class="blurarea"></div>
 <div id="header" class="header"><img onload="this.style.opacity='1';" src="images/Picture1.png" id="logo" style=" width:100%;margin-top: 4%;"></div>
+</div>
 
 
     <svg:svg>
@@ -79,7 +85,25 @@ $(document).ready( function(){
 	</svg:svg>
 
 <div id="scroll" style="position: absolute;bottom: 0;right: 0;"><a href="#"><img onload="this.style.opacity='1';" src="images/scroll.png"></a></div>
+<div id="schedule" style="height:700px;
+width: 100%;">
+<h2>SCHEDULE</h2>
+</div>
 
+<div id="material" style="height: 700px;
+width: 100%;">
+<h2>MATERIAL</h2>
+</div>
+
+<div id="register" style="height: 700px;
+width: 100%;">
+<h2>REGISTER</h2>
+</div>
+
+<div id="sponsors" style="height: 700px;
+width: 100%;">
+<h2>SPONSORS</h2>
+</div>
 
 <script type="text/javascript">
 
@@ -151,7 +175,28 @@ function adjustStyle(width)
     				
         	}
     }
-       
+
+   $(document).scroll(function(){
+    if($(this).scrollTop() >300)
+    {     
+    $("#header").animate({opacity: "0.1"},2000);   
+    }
+     
+});
+    $(document).scroll(function(){
+    if($(this).scrollTop()<100)
+    {     
+    $("#header").animate({opacity: "1"},1000);   
+    }
+     
+});
+    
+    $(document).ready(function(){
+  $('.navbar.container-fluid ul li a').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+});
+});   
 
 
 </script>
