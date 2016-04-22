@@ -24,11 +24,11 @@
       <a class="navbar-brand pull-right"  href="#"><img src="images/header-menu.png" style="margin-top:-13;" id="menuicon"></a>
     </div>
     <ul class="nav navbar-nav" style="font-family:venus rising">
-      <li class="active"><a href="#">HOME</a></li>
-      <li><a href="#schedule">SCHEDULE</a></li>
-      <li><a href="#material">MATERIAL</a></li> 
-      <li><a href="#register">REGISTER</a></li>
-      <li><a href="#sponsors">SPONSORS</a></li>  
+      <li><a href="#home" id="hme">HOME</a></li>
+      <li><a href="#schedule" id="scd">SCHEDULE</a></li>
+      <li><a href="#material" id="mtl">MATERIAL</a></li> 
+      <li><a href="#register" id="rgtr">REGISTER</a></li>
+      <li><a href="#sponsors" id="sprs">SPONSORS</a></li>  
       
     </ul>
   </div>
@@ -85,36 +85,322 @@ $(document).ready( function(){
 	</svg:svg>
 
 <div id="scroll" style="position: absolute;bottom: 0;right: 0;"><a href="#"><img onload="this.style.opacity='1';" src="images/scroll.png"></a></div>
-<div id="schedule" style="height:700px;
-width: 100%;">
-<h2>SCHEDULE</h2>
+
+
+
+<div class="fadeInBlock" id="schedule"  style="
+width: 90%;margin-right:5%;margin-left:5%;background-color: #fff;">
+ <div class="container">
+    <ul class="timeline">
+    <h2>SCHEDULE</h2>
+   
+           <li>
+          <div class="timeline-badge down"><i class="fa fa-thumbs-down"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title" style="font-size: 27px; cursor: pointer;" id="day1"> >> DAY 1 : JULY 29TH,2016</h4>
+            </div>
+          </div>
+        </li>
+         <li class="1">
+          <div class="timeline-badge down"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">OPENING CEREMONY AND GUEST LECTURES</h4>
+            </div>
+          </div>
+        </li>
+        <li class="1">
+          <div class="timeline-badge down"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">PITCHING OF IDEAS</h4>
+            </div>
+          </div>
+        </li>
+        <li class="1">
+          <div class="timeline-badge neutral"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">REFRESHMENTS</h4>
+            </div>
+          </div>
+        </li>
+        <li class="1">
+          <div class="timeline-badge down"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">HACK BEGINS</h4>
+            </div>
+          </div>
+        </li>
+        
+        <li>
+          <div class="timeline-badge up"></div>
+         <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title" style="font-size: 27px; cursor: pointer;" id="day2"> >> DAY 2 :JULY 30TH,2016</h4>
+            </div>
+           
+          </div>
+        </li>
+        <li class="2">
+          <div class="timeline-badge up"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">HACKING CONTINUES</h4>
+            </div>
+          </div>
+        </li>
+        <li class="2">
+          <div class="timeline-badge down"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">REFRESHMENTS</h4>
+            </div>
+          </div>
+        </li>
+       
+
+         <li>
+          <div class="timeline-badge up"></div>
+         <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title" style="font-size: 27px; cursor: pointer;" id="day2"> >> DAY 3 :JULY 31TH,2016</h4>
+            </div>
+           
+          </div>
+        </li>
+        <li class="2">
+          <div class="timeline-badge up"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">HACKING CONTINUES</h4>
+            </div>
+          </div>
+        </li>
+        <li class="2">
+          <div class="timeline-badge down"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">REFRESHMENTS</h4>
+            </div>
+          </div>
+        </li>
+        <li class="2">
+          <div class="timeline-badge neutral"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">ANNOUNCEMENT OF RESULTS</h4>
+            </div>
+          </div>
+        </li>
+        <li class="2">
+          <div class="timeline-badge down"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">PRIZE DISTRIBUTION</h4>
+            </div>
+          </div>
+        </li>
+    </ul>
+    </ul>
+</div>
 </div>
 
-<div id="material" style="height: 700px;
-width: 100%;">
-<h2>MATERIAL</h2>
+
+<style>
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #CCCCCC;
+  left: 25px;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li > .timeline-panel {
+  width: calc( 100% - 55px );
+  float: right;
+  border: 1px solid #d4d4d4;
+  border-radius: 22px;
+  padding: 10px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  left: -15px;
+  display: inline-block;
+}
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  left: -14px;
+  display: inline-block;
+}
+.timeline > li > .timeline-badge {
+  color: #FFFF99;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 25px;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 13px;
+  
+  background-color: #666666;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: left;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  right: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline-badge.primary {
+  background-color: #006699  !important;
+}
+.timeline-badge.up {
+  background-color: #339933 !important;
+}
+.timeline-badge.down {
+  background-color: #CC3333 !important;
+}
+.timeline-badge.neutral {
+  background-color: #999999 !important;
+}
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+</style>
+
+<div  class="fadeInBlock" id="material" style="height: 700px;
+width: 90%;margin-right:5%;margin-left:5%;background-color: #fff;">
+<h2 style="width: 90%;margin-right:5%;margin-left:5%;text-align: center;">MATERIAL</h2>
+<h3 style="text-align: center;">We will provide you with:</h3>
+<ul style="text-align: center;list-style-type: none;">
+<li>Arduino</li>
+<li>PCB</li>
+<li>Encoder-decoders</li>
+<li>Proximity sensors</li>
+<li>Wire strippers</li>
+<li>Temperature sensors</li>
+</ul>
 </div>
 
-<div id="register" style="height: 700px;
-width: 100%;">
+<div   class="fadeInBlock" id="register" style="height: 700px;
+width: 90%;margin-right:5%;margin-left:5%;background-color: #fff;">
 <h2>REGISTER</h2>
 </div>
 
-<div id="sponsors" style="height: 700px;
-width: 100%;">
+<div class="fadeInBlock"  id="sponsors"  style="
+width: 90%;margin-right:5%;margin-left:5%;background-color: #fff;">
 <h2>SPONSORS</h2>
+<div class="container">
+        
+        <p style="text-align:center;">Know our proud sponsors</p>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="images/hackerearth.jpg " >
+                    
+                </div>
+
+                <div class="thumbnail">
+                    <img src="images/pmg.jpg  " >
+                    
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="images/hackerearth.jpg " >
+                   
+                </div>
+
+                <div class="thumbnail">
+                    <img src="images/pmg.jpg " >
+                    
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="images/hackerearth.jpg " >
+                    
+                </div>
+
+                <div class="thumbnail">
+                    <img src="images/pmg.jpg " >
+                    
+                </div>
+            </div>
+             <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="images/hackerearth.jpg " >
+                    
+                </div>
+
+                <div class="thumbnail">
+                    <img src="images/pmg.jpg " >
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script type="text/javascript">
-
-$("#header").hover(
-function() {
-    $(this).find('img').attr("src", "images/Picture2.png");
-},
-function() {
-    $(this).find('img').attr("src","images/Picture1.png");
-}
-);
 
  
 $(function() {
@@ -175,11 +461,16 @@ function adjustStyle(width)
     				
         	}
     }
+     $('.nav').click(function() {
+
+    $('nav ul li.active').removeClass('active');
+    $(this).addClass('active');
+});
 
    $(document).scroll(function(){
     if($(this).scrollTop() >300)
     {     
-    $("#header").animate({opacity: "0.1"},2000);   
+    $("#header").animate({opacity: "0.1"},1000);   
     }
      
 });
@@ -190,15 +481,35 @@ function adjustStyle(width)
     }
      
 });
+    $(function() {
+    $(window).scroll( function(){
     
-    $(document).ready(function(){
-  $('.navbar.container-fluid ul li a').click(function(){
-    $('li a').removeClass("active");
-    $(this).addClass("active");
+       
+        $('.fadeInBlock').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+            bottom_of_window = bottom_of_window + 200;  
+          
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},4000);
+                    
+            }
+        }); 
+    
+    });
 });
-});   
-
-
+   
+/*$("nav .container-fluid .navbar-nav #scd").click(function() {
+  $(this).addClass('.active');
+    $('html,body').animate({
+        scrollTop: $("#schedule").offset().top},
+        500);
+});
+*/
 </script>
 
 </body>
